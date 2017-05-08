@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent_1, #parent_2, #parent_3 {
+            height: 300px;
+            background-color: lightblue;
+        }
+        .child_1 {
+            background-color: firebrick;
+            height: 150px;
+        }
+        .grand_child {
+            height: 0px;
+            background-color: dimgray;
+        }
+        .great_grand_child {
+            height: 0px;
+            background-color: darkorange;
+        }
+        #parent_1 .child_1, #parent_1 .child_2 {
+            background-color: yellow;
+        }
+        #parent_1 .grand_child, #parent_1 .grand_child {
+            height: 50px;
+            background-color: cyan;
+        }
+        #parent_1 .great_grand_child, #parent_1 .great_grand_child {
+            height: 20px;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Nested Structures</h1>
+   
+   <div id="parent_1">
+       <div class="child_1">
+           <div class="grand_child">
+               <div class="great_grand_child"></div>
+           </div>
+       </div>
+       <div class="child_2">
+           <div class="grand_child">
+               <div class="great_grand_child"></div>
+           </div>
+       </div>
+   </div>
+   <hr>
+   <div id="parent_2">
+       <div class="child_1">
+           <div class="grand_child">
+               <div class="great_grand_child"></div>
+           </div>
+       </div>
+       <div class="child_2">
+           <div class="grand_child">
+               <div class="great_grand_child"></div>
+           </div>
+       </div>
+   </div>
+   <hr>
+   <div id="parent_3">
+       <div class="child_1">
+           <div class="grand_child">
+               <div class="great_grand_child"></div>
+           </div>
+       </div>
+       <div class="child_2">
+           <div class="grand_child">
+               <div class="great_grand_child"></div>
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>

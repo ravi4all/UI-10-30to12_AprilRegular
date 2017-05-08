@@ -1,0 +1,17 @@
+body {
+    background-color: dimgrey;
+}
+
+h2 {
+    color: dodgerblue;
+}
+
+/*
+div - Selector
+{} - Expression
+width - property
+200px - value
+*/
+div {
+    width: 200px;
+}
