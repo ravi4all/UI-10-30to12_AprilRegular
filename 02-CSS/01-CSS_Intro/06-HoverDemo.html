@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+            display: none;
+        }
+        .child_1 {
+            border: 2px solid #000;
+            width: 400px;
+        }
+        #div_1 {
+            border: 2px solid red;
+            min-height: 50px;
+        }
+        #div_1:hover .child_1 > img {
+            display: block;
+        }
+        #div_1 .child_1:hover .grand_child > img {
+            display: block;
+        }
+        #div_1 .grand_child:hover .great_grand img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Hover Demo</h1>
+   
+   <div id="div_1">
+       <div class="child_1">
+           <img src="http://media2.intoday.in/indiatoday/images/stories/647_010517091159.jpg" alt="">
+           <div class="grand_child">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Sachin_Tendulkar_at_MRF_Promotion_Event.jpg" alt="">
+               <div class="great_grand">
+                   <img src="https://pbs.twimg.com/profile_images/789817267567472640/BlpcUEvx.jpg" alt="">
+               </div>
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>
