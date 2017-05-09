@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    background-image: url("../../Images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#header {
+    /*height: 200px;*/
+    border: 2px solid red;
+    /*background-image: url("../../Images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");*/
+    background-repeat: no-repeat;
+    /*background-size: 100% 100%;*/
+    background-size: cover;
+    background-position: center;
+}
