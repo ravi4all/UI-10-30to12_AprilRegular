@@ -1,0 +1,27 @@
+#parent {
+    background-color: brown;
+    padding: 10px;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column_1 {
+    float: left;
+    width: 40%;
+}
+.column_2 {
+    float: right;
+    width: 40%;
+    background-color: dimgrey;
+}
+
+/*.column_3 {
+    clear: left;
+}*/
+
+.row {
+    /*clear: left;*/
+    background-color: darkturquoise;
+}
