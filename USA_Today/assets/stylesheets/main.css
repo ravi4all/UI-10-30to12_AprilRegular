@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+#header {
+    background-color: #000000;
+}
+#header .logo {
+    width: 20%;
+}
+#header .logo img {
+    width: 100%;
+}
+
+#header .user_section {
+    width: 40%;
+    padding-top: 25px;
+}
+
+#header .form {
+    width: 70%;
+    position: relative;
+}
+#header .form input[type="text"] {
+    width: 90%;
+    font-size: 18px;
+    padding: 0px 10px;
+    height: 35px;
+    background-color: #eee;
+    border: none;
+}
+#header .form input[type="text"]:focus {
+    background-color: #fff;
+}
+#header .form input[type="submit"] {
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 40px;
+    background-image: url("../images/magnifying-glass-grey.png");
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#header .subscribe a {
+    font-family: arial;
+    color: #fff;
+    text-decoration: none;
+}
+#header .subscribe a span {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00a0f8;
+}
+
+
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-nav ul li {
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    margin: 0px -2px;
+}
+#main-nav ul li:last-child {
+    border-right: 1px solid #fff;
+}
+#main-nav ul li a{
+    color: #fff;
+    display: block;
+    padding: 10px 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
