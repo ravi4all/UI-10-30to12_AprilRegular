@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @keyframes circle {
+    from { transform:rotate(0deg);}
+    to { transform:rotate(360deg);}
+}
+
+@keyframes inner-circle {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+
+body div {
+    width:100px;
+    height:100px;
+    margin: 20px auto 0;
+    color:orange;
+    font-size:100px;
+    line-height:1;
+    animation: circle 5s linear infinite;
+    transform-origin:50% 200px;
+}
+
+div > img {
+    animation: inner-circle 1s linear infinite;
+}
+    </style>
+</head>
+<body>
+   
+   <div id="div1">
+       <img src="ball.jpg" alt="">
+   </div>
+    
+</body>
+</html>

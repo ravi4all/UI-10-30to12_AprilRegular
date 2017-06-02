@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            border: 1px solid red;
+            width: 350px;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+            perspective: 400px;
+        }
+        span {
+            display: inline-block;
+            height: 80px;
+            width: 100px;
+            background-color: #0077B5;
+            transition-duration: 2s;
+            /*transition-delay: 2s;*/
+            /*transition-timing-function: linear;*/
+            /*transform: rotateY(60deg);*/
+        }
+        div:hover span {
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Transitions</h1>
+
+<div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+</body>
+</html>

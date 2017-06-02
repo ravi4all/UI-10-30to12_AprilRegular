@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img {
+            position: absolute;
+            animation: earth 10s infinite;
+            /*animation-timing-function: linear;*/
+        }
+        .img_1 {
+            animation-timing-function: linear;
+            top: 100px;
+        }
+        .img_2 {
+            animation-timing-function: ease-in;
+            top: 200px;
+        }
+        .img_3 {
+            animation-timing-function: ease-out;
+            top: 300px;
+        }
+        .img_4 {
+            animation-timing-function: ease-in-out;
+            top: 400px;
+        }
+        @keyframes earth {
+            0% {
+                transform: translate(0px,0px);
+            }
+            50% {
+                transform: translate(1000px,0px);
+            }
+            100% {
+                transform: translate(0px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Animation Timing Function</h1>
+
+<img src="00-22.gif" class="img_1" alt="image"/>
+<img src="00-22.gif" class="img_2" alt="image"/>
+<img src="00-22.gif" class="img_3" alt="image"/>
+<img src="00-22.gif" class="img_4" alt="image"/>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            background: red;
+            height: 100px;
+            width: 300px;
+            animation-name: example1;
+            animation-duration: 10s;
+        }
+       /* @keyframes example1{
+            from { background: red; }
+            to { background: green; transform: translate(100px, 100px);}
+        }*/
+         @keyframes example1{
+            0% { background: red; }
+             50% { background: white; transform: rotateY(180deg);}
+            100% { background: green; transform: translate(100px, 100px);}
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>First Animation</h1>
+   
+   <div>
+       
+   </div>
+    
+</body>
+</html>

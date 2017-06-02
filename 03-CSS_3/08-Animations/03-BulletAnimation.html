@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100%;
+            width: 100%;
+        }
+        div img {
+            width: 20%;
+            position: relative;
+            z-index: 1000;
+            animation: bullet 5s infinite alternate;
+        }
+        @keyframes bullet{
+            0% { left: 0%; top: 30%; transform: rotateZ(0deg);}
+            50% { left: 60%;transform: rotateZ(0deg);}
+            51% {
+                transform: rotateZ(3600deg);
+            }
+            100% { left: 0%; transform: rotateZ(0deg);}
+        }
+        .img1 {
+            position: absolute;
+            right: 0%;
+            width: 30%;
+            top: 10%;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Transform With Transitions</h1>
+   
+   <div>
+   <img src="bullet-png-31.png" alt="">
+    </div>
+    
+    <img src="http://gallery.envazhi.com/wp-content/uploads/2012/08/sivaji-motta-boss-14.jpg" class="img1" alt="">
+    
+</body>
+</html>

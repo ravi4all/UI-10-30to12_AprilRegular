@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    /*border-radius: 50%;*/
+    bottom: 0px;
+    float: left;
+    background-color: greenyellow;
+    font-weight: bold;
+    position: absolute;
+        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite alternate;
+    }
+    #div2 {
+        left: 20%;
+    }
+    #div3 {
+        left: 40%;
+    }
+    #div4 {
+        left: 60%;
+    }
+    #div5 {
+        left: 80%;
+    }
+    
+
+/* Chrome, Safari, Opera */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 80%;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="div1">linear</div>
+<div id="div2">ease</div>
+<div id="div3">ease-in</div>
+<div id="div4">ease-out</div>
+<div id="div5">ease-in-out</div>
+
+</body>
+</html>
+
