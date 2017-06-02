@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            height: 100px;
+            width: 100px;
+            transition: 4s;
+            /*transform: scale(5,5);*/
+            /*animation: anim 1s infinite;*/
+        }
+        /*@keyframes anim {
+            from { transform: scale(1,1) rotateZ(0deg);}
+            to { transform: scale(5,5) rotateZ(360deg);}
+        }*/
+        /*@keyframes anim {
+            from { transform: rotateZ(0deg);}
+            to { transform: rotateZ(360deg);}
+        }*/
+        div img {
+            width: 100%;
+        }
+        div:hover {
+            transform: rotateZ(360deg) scale(5,5);
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Today's Headline</h1>
+    
+    <div class="image">
+        <img src="Million-dollar-man-Dhoni-surges-to-22-in-Forbes%C3%86-list.jpg" alt="image">
+    </div>
+    
+</body>
+</html>

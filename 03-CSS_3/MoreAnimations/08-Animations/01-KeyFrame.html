@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    -webkit-animation-name: example1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example1;
+    animation-duration: 5s;
+    margin-bottom: 20px;
+    /*left: 0px;
+    top: 0px;*/
+    position: absolute;
+}
+
+
+/* Standard syntax */
+@keyframes example1 {
+    from {background-color: red; left: 0px; top: 0px;}
+    to {background-color: green; left: 100px; top: 200px;}
+}
+    
+    #div2 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    -webkit-animation-name: example2; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example2;
+    animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: absolute;
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {background-color: red; left: 0px;}
+    25%  {background-color: yellow; left: 800px; transform: scale(1.5,1.5);}
+    50%  {background-color: blue; transform: rotateY(180deg); left: 0px;}
+    100% {background-color: green; }
+}
+
+    #div3 {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        animation: slider 5s infinite;
+        background: yellow;
+    }
+    @keyframes slider {
+        0% {
+            left: 0%;    
+        }
+        20% {
+            left: -10%;
+        }
+        50% {
+            left: 10%;
+        }
+        100% {
+            left: 0%; right: -100%;
+        }
+    }
+    
+</style>
+</head>
+<body>
+<h1>The keyframe rule</h1>
+<p> When an animation is finished, it changes back to its original style.</p>
+In this we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).
+<!--<div id="div1"></div>-->
+
+<p>In this we have specified when the style will change the background-color of the element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete:</p>
+<div id="div2"></div>
+
+<!--<div id="div3"></div>-->
+
+</body>
+</html>
+

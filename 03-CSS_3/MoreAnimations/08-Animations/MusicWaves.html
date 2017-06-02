@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    position: absolute;
+    bottom: 0px;
+}
+    #div2 {
+        left: 11%;
+    }
+    #div3 {
+        left: 21%;
+    }
+    #div4 {
+        left: 31%;
+    }
+    #div5 {
+        left: 41%;
+    }
+    #div1 {
+        animation: div1 3s infinite alternate;
+    }
+    @keyframes div1 {
+        0% { height: 100px; }
+        50% { height: 400px; }
+        100% { height: 100px; }
+    }
+    #div2 {
+        animation: div2 1s infinite alternate;
+    }
+    @keyframes div2 {
+        0% { height: 100px; }
+        50% { height: 500px; }
+        100% { height: 100px; }
+    }
+    #div3 {
+        animation: div3 1s infinite alternate;
+    }
+    @keyframes div3 {
+        0% { height: 100px; }
+        50% { height: 200px; }
+        100% { height: 100px; }
+    }
+    #div4 {
+        animation: div4 1s infinite alternate;
+    }
+    @keyframes div4 {
+        0% { height: 100px; }
+        50% { height: 500px; }
+        100% { height: 100px; }
+    }
+    #div5 {
+        animation: div5 1s infinite alternate;
+    }
+    @keyframes div5 {
+        0% { height: 100px; }
+        50% { height: 500px; }
+        100% { height: 100px; }
+    }
+
+/* Standard syntax */
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+    #div2:before {
+        content: "";
+        background: url("Hulk/aGa_HulkAni.gif")no-repeat;
+        height: 105px;
+        width: 150px;
+        left: -20px;
+        top: -100px;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+<h1>Just Beat It</h1>
+
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+<div id="div5"></div>
+
+
+</body>
+</html>
+

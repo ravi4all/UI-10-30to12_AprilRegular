@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    background-color: grey;
+    border: 1px solid black;
+    transition: 2s;
+}
+    div:hover {
+        -ms-transform: rotateX(360deg); /* IE 9 */
+    -webkit-transform: rotateX(360deg); /* Safari */
+    /*transform: rotate3d(180,270,360, 360deg);*/ /* Standard syntax */
+        /*transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg) translateX(300px) translateY(200px);*/
+        transform: rotateX(360deg);
+        transition: 5s;
+    }
+</style>
+</head>
+<body>
+
+
+
+<div>
+The rotate() method rotates an element clockwise or counter-clockwise. This div element is rotated clockwise 50 degrees.
+</div>
+
+</body>
+</html>
+
