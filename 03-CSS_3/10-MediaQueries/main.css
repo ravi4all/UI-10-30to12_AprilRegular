@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    padding: 10px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.column {
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.row {
+    display: flex;
+}
+.row .image {
+    width: 30%;
+}
+img {
+    width: 100%;
+}
+.row .text {
+    width: 70%;
+}
+
+@media(min-width: 1200px){
+    body {
+        background-color: red;
+    }
+}
+@media (max-width: 992px) {
+    .row {
+        display: block;
+    }
+    .row .image {
+        width: 100%;
+    }
+    .row .text {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        display: block;
+    }
+}
