@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Form Elements</h1>
+
+<form action="#">
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" placeholder="Enter Name" autofocus/></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td><input type="email" placeholder="Enter Email" required value="ravi@gmail.com"/></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" placeholder="Enter Password" required value="123131"/></td>
+        </tr>
+        <tr>
+            <td>Enter URL</td>
+            <td><input type="url" placeholder="Enter URL"/></td>
+        </tr>
+        <tr>
+            <td>Enter Date</td>
+            <td><input type="date"/></td>
+            <td><input type="datetime-local"/></td>
+            <td><input type="month"/></td>
+            <td><input type="week"/></td>
+            <td><input type="time"/></td>
+        </tr>
+        <tr>
+            <td>Enter Number</td>
+            <td><input type="number" min="10" max="30"/></td>
+        </tr>
+        <tr>
+            <td>Enter Mobile Number</td>
+            <td><input type="text" placeholder="Enter credit card number" maxlength="16"
+                    pattern="[0-9]{10}[a-z]{6}" title="10 Digits and 6 alphabets are allowed"/></td>
+        </tr>
+        <tr>
+            <td>Set Range</td>
+            <td><input type="range" value="20" onchange="outputId.value = value" step="10"/></td>
+            <td><output id="outputId">20</output></td>
+        </tr>
+        <tr>
+            <td>Progress</td>
+            <td><progress value="50" max="100"></progress></td>
+        </tr>
+        <tr>
+            <td>Enter Message</td>
+            <td><textarea name="" id="" cols="30" rows="10" style="resize: none;"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+            <td><input type="reset"/></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
