@@ -15,6 +15,7 @@
     position: fixed;
     width: 100%;
     top: 0px;
+    z-index: 10;
 }
 #header .logo {
     padding: 10px 0px 0px;
@@ -64,6 +65,7 @@
     list-style: none;
 }
 #main-navigation ul li {
+    font-weight: bold;
     display: inline-block;
     margin: 0px 10px;
 }
@@ -84,6 +86,89 @@
     margin-top: 100px;
 }
 
+#main {
+    padding: 20px;
+}
+
+#main .quick_links {
+    margin-bottom: 15px;
+}
+#main .quick_links ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main .quick_links ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+#main .quick_links ul li:first-child {
+    font-weight: bold;
+    color: #878a8f;
+    text-transform: uppercase;
+}
+#main .quick_links ul li:nth-child(2) a,#main .quick_links ul li:nth-child(3) a {
+    color: red;
+    font-weight: bold;
+}
+
+
+#section_1 .wrapper {
+    display: flex;
+}
+#section_1 .wrapper img {
+    width: 100%;
+    min-height: 366px;
+}
+#section_1 .video, #section_1 .description {
+    min-width: 60%;
+}
+#section_1 .description a, #section_1 .description p, #section_1 .description .desc-label {
+    color: #fff;
+}
+#section_1 .wrapper .description {
+    background-color: #243d5e;
+    padding: 15px;
+}
+#section_1 .description h2 {
+    margin-bottom: 25px;
+}
+#section_1 .description p {
+    margin-bottom: 40px;
+}
+#section_1 .description ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /*list-style-image: url('sqpurple.gif');*/
+}
+#section_1 .description ul li {
+    margin-bottom: 15px;
+}
+#section_1 .description ul li:before {
+    content: "";
+    background: url("../images/global-sprite.png");
+    height: 13px;
+    width: 14px;
+    background-position: -486px -256px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.secondary_col_sm_3 {
+    width: 20.3%;
+    padding: 0px;
+}
+
+#sidebar {
+    background-color: #1a2f45;
+    margin: 0px -15px;
+    padding: 0px 0px 0px 15px;
+}
+#sidebar h2 {
+    color: #fff;
+}
 #sidebar .nav-tabs li a {
     color: #fff;
     font-weight: bold;
@@ -99,8 +184,63 @@
 }
 #sidebar .nav-tabs>li {
     background-color: #007bd5;
+    min-width: 146px;
+    text-align: center;
 }
 #sidebar .nav>li>a:focus, .nav>li>a:hover {
     border: none;
     background-color: transparent;
+}
+#sidebar .tab-content {
+    padding: 0px 15px;
+}
+
+
+#sidebar .live {
+    background-color: #1a1f23;
+    padding: 15px;
+}
+#sidebar .live_text {
+    background-color: red;
+    padding: 0px 5px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    width: 18%;
+}
+#sidebar h5 {
+    color: #fff;
+    font-weight: bold;
+    width: 70%;
+    margin-left: 20px;
+}
+#sidebar .live ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#sidebar .live ul li {
+    color: #fff;
+    margin-bottom: 15px;
+}
+#sidebar .live ul li span {
+    font-size: 10px;
+    display: block;
+}
+#sidebar .live .flag {
+    width: 50px;
+    background: url("../images/team-logosx50.png");
+    background-position: 0 -1350px;
+    height: 50px;
+}
+#sidebar .live .score {
+    width: 70%;
+    margin-left: 15px;
+}
+#sidebar .live .score .live_score {
+    font-size: 25px;
+    font-weight: bold;
+}
+#sidebar .live .second_team .flag{
+    background-position: 0 -150px;
 }
