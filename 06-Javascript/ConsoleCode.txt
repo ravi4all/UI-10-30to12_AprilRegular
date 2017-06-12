@@ -1,0 +1,119 @@
+a = 10
+10
+a = "Hello"
+"Hello"
+a = 10.5
+10.5
+typeof(a)
+"number"
+a = "Hello"
+"Hello"
+typeof(a)
+"string"
+a = 10
+10
+b = 20
+20
+a + b
+30
+a - b
+-10
+a/b
+0.5
+a*b
+200
+a = "10"
+"10"
+b = 10
+10
+a + b;
+"1010"
+c = 10
+10
+a + b + c;
+"101010"
+b + a;
+"1010"
+b+c+a;
+"2010"
+a == b;
+true
+a === b;
+false
+function display(){
+    console.log("Hello JS");
+}
+undefined
+display()
+VM289:2 Hello JS
+undefined
+a = 10
+10
+var a;
+undefined
+var a = 10;
+undefined
+a = 10
+10
+function display(a,b){
+    return a + b;
+}
+undefined
+display(2,3)
+5
+display()
+NaN
+arr = [1,2,3,4,5,6,7]
+(7) [1, 2, 3, 4, 5, 6, 7]0: 11: 22: 33: 44: 55: 66: 7length: 7__proto__: Array(0)concat: function concat()constructor: function Array()copyWithin: function copyWithin()entries: function entries()every: function every()fill: function fill()filter: function filter()find: function find()findIndex: function findIndex()forEach: function forEach()includes: function includes()indexOf: function indexOf()join: function join()keys: function keys()lastIndexOf: function lastIndexOf()length: 0map: function map()pop: function pop()push: function push()reduce: function reduce()reduceRight: function reduceRight()reverse: function reverse()shift: function shift()slice: function slice()some: function some()sort: function sort()splice: function splice()toLocaleString: function toLocaleString()toString: function toString()unshift: function unshift()Symbol(Symbol.iterator): function values()Symbol(Symbol.unscopables): Object__proto__: Object
+arr.__proto__
+    [constructor: function, toString: function, toLocaleString: function, join: function, pop: function…]concat: function concat()constructor: function Array()copyWithin: function copyWithin()entries: function entries()every: function every()fill: function fill()filter: function filter()find: function find()findIndex: function findIndex()forEach: function forEach()includes: function includes()indexOf: function indexOf()join: function join()keys: function keys()lastIndexOf: function lastIndexOf()length: 0map: function map()pop: function pop()push: function push()reduce: function reduce()reduceRight: function reduceRight()reverse: function reverse()shift: function shift()slice: function slice()some: function some()sort: function sort()splice: function splice()toLocaleString: function toLocaleString()toString: function toString()unshift: function unshift()Symbol(Symbol.iterator): function values()Symbol(Symbol.unscopables): Object__proto__: Object
+var obj = {
+    "id" : 101,
+    "name" : "Ram",
+    "age" : 20
+}
+undefined
+obj
+Object {id: 101, name: "Ram", age: 20}age: 20id: 101name: "Ram"__proto__: Objectconstructor: function Object()arguments: nullassign: function assign()arguments: nullcaller: nulllength: 2name: "assign"__proto__: function ()apply: function apply()arguments: (...)bind: function bind()call: function call()caller: (...)constructor: function Function()length: 0name: ""toString: function toString()Symbol(Symbol.hasInstance): function [Symbol.hasInstance]()get arguments: function ThrowTypeError()set arguments: function ThrowTypeError()get caller: function ThrowTypeError()set caller: function ThrowTypeError()__proto__: Object[[FunctionLocation]]: <unknown>caller: nullcreate: function create()defineProperties: function defineProperties()defineProperty: function defineProperty()entries: function entries()freeze: function freeze()getOwnPropertyDescriptor: function getOwnPropertyDescriptor()getOwnPropertyDescriptors: function getOwnPropertyDescriptors()getOwnPropertyNames: function getOwnPropertyNames()getOwnPropertySymbols: function getOwnPropertySymbols()getPrototypeOf: function getPrototypeOf()is: function is()isExtensible: function isExtensible()isFrozen: function isFrozen()isSealed: function isSealed()keys: function keys()length: 1name: "Object"preventExtensions: function preventExtensions()prototype: Objectseal: function seal()setPrototypeOf: function setPrototypeOf()values: function values()__proto__: function ()[[FunctionLocation]]: <unknown>hasOwnProperty: function hasOwnProperty()isPrototypeOf: function isPrototypeOf()propertyIsEnumerable: function propertyIsEnumerable()toLocaleString: function toLocaleString()toString: function toString()valueOf: function valueOf()__defineGetter__: function __defineGetter__()__defineSetter__: function __defineSetter__()__lookupGetter__: function __lookupGetter__()__lookupSetter__: function __lookupSetter__()get __proto__: function __proto__()set __proto__: function __proto__()
+obj instanceof Object;
+true
+arr instanceof Object;
+true
+arr instanceof Array;
+true
+obj.id;
+101
+obj.name;
+"Ram"
+obj.salary;
+undefined
+obj.salary = 25000;
+25000
+obj;
+Object {id: 101, name: "Ram", age: 20, salary: 25000}age: 20id: 101name: "Ram"salary: 25000__proto__: Object
+var obj = {
+    "id" : 101,
+    "name" : "Ram",
+    "age" : 20,
+    "salary" : function() {
+        console.log("Salart is 25000")
+    }
+}
+undefined
+obj.salary;
+function () {
+    console.log("Salart is 25000")
+}
+obj.salary();
+VM714:6 Salart is 25000
+undefined
+typeof(arr)
+"object"
+a = "Hello"
+"Hello"
+a instanceof Object;
+false
+a instanceof String;
+false
+String instanceof Object;
+true
