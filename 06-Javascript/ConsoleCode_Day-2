@@ -1,0 +1,43 @@
+var obj = {
+name : ['Ram','Sita'],
+salary : [12000,15000],
+bio_1 : function(){
+console.log(this.name[0] + " " + this.salary[0]);
+}
+}
+undefined
+obj
+Object {name: Array[2], salary: Array[2]}bio_1: ()name: Array[2]salary: Array[2]__proto__: Object
+obj.name
+["Ram", "Sita"]
+obj.salary
+[12000, 15000]
+
+
+
+a = "Hello"
+"Hello"
+a
+"Hello"
+typeof a
+"string"
+a = "Hello world this is javascript";
+"Hello world this is javascript"
+a.split(" ")
+["Hello", "world", "this", "is", "javascript"]
+a[0]
+"H"
+a.split(" ")[0]
+"Hello"
+a.charAt(2)
+"l"
+a.toLowerCase()
+"hello world this is javascript"
+a.toUpperCase()
+"HELLO WORLD THIS IS JAVASCRIPT"
+a.length()
+VM1148:1 Uncaught TypeError: a.length is not a function(…)(anonymous function) @ VM1148:1evaluate @ VM38:116
+a.length
+30
+a.replace("Hello","Bye")
+"Bye world this is javascript"
