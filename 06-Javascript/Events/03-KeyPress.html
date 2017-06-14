@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function show(){
+            var box = document.getElementById("box_1");
+            document.getElementById("result").innerHTML = box.value;
+            /*alert("Key Pressed");*/
+        }
+    </script>
+</head>
+<body>
+
+<h1>Key Press</h1>
+
+<input type="text" id="box_1" onkeyup="show()"/>
+
+<h2 id="result"></h2>
+
+<!--onkeypress - Will not work for backspace and it will execute first and then print
+the value
+onkeydown - Will work for backspace and it will execute and print the value
+immediately
+onkeyup - Will work after releasing the key and it will for backspace and other keys-->
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function validate(){
+            var box = document.getElementById("box_1");
+            if(box.value == ""){
+                alert("Cannot leave this field blank");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>On Blur</h1>
+
+<input type="text" id="box_1" onblur="validate()"/>
+
+
+</body>
+</html>

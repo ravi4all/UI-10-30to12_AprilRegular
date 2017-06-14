@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function validate(){
+            var box = document.getElementById("box_1");
+            if(box.value.length <= 5){
+                alert("At least 10 values are required");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>On Change</h1>
+
+<input type="text" id="box_1" onchange="validate()"/>
+
+<!--Blur will execute when text box is blank
+Change will execute only when value of textbox is changed-->
+
+</body>
+</html>
