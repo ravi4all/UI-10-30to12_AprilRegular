@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function display(event){
+            var a = document.getElementById("box_1");
+            var b = document.getElementById("box_2");
+            document.getElementById("content").innerHTML = a.value + " " + b.value;
+            event.preventDefault();
+        }
+    </script>
+</head>
+<body>
+
+<h1>On Submit</h1>
+
+<div id="content">
+    <form action="https://www.google.co.in/?gws_rd=ssl" onsubmit="display(event)">
+        <input type="text" placeholder="Enter Name" id="box_1"/>
+        <input type="password" placeholder="Enter Password" id="box_2"/>
+        <input type="submit" value="Login"/>
+    </form>
+</div>
+
+</body>
+</html>

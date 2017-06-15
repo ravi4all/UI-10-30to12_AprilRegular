@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function change_image(obj){
+            /*obj.innerHTML = "<h2>Indian Hulk</h2>"+"<img src='../../images/download%20(1).jpg'>";*/
+            obj.innerHTML = "<img src='../../images/download%20(1).jpg'>";
+            document.getElementById("text").innerHTML = "Indian Hulk";
+        }
+        function change_image_2(obj){
+            /*obj.innerHTML = "<h2>Hulk</h2>"+'<img src="../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>';*/
+            obj.innerHTML = "<img src='../../images/NEbZRNg3YX0cfc_1_b.jpg'>";
+            document.getElementById("text").innerHTML = "Hulk";
+        }
+    </script>
+</head>
+<body>
+
+<h1>OnMouseOver</h1>
+
+<div id="images">
+    <h2 id="text">Hulk</h2>
+    <div id="image" onmouseover="change_image(this)" onmouseout="change_image_2(this)">
+        <img src="../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+</div>
+
+</body>
+</html>
