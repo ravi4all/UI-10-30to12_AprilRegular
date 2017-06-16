@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript Basic Example</title>
+<style type="text/css">
+</style>
+	<!--<script src="../01-Basics/myjs.js"></script>-->
+<script type="text/javascript">
+function foc(){
+	alert("On focus called");
+}
+function validate(){
+	alert(" Blur Call");
+	var str = document.getElementById("pwd").value;
+	if(!str){
+		document.getElementById("span").innerHTML = "You can not leave this field blank";
+	}
+	else if(isNaN(str)){
+		document.getElementById("span").innerHTML = "Password Can only have numrical digits!!!";
+	}
+	else if( ! (/(\d+){5}/).test(str) ) {
+		document.getElementById("span").innerHTML = "Invalid password, Minimum 5 digits required!!!";
+	}
+	else{
+		document.getElementById("span").innerHTML = str;
+	}
+}
+</script>
+</head>
+<body>
+<label>Enter Your Password:</label>
+<input type="text" placeholder="Enter your password" id="pwd"  onblur="validate()"/>
+<!--<input type="text" placeholder="Enter your password" id="pwd" name="pwd"  />-->
+<span id="span"></span>
+</body>
+</html>

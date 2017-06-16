@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .myclass1{
+            background-color: yellow;
+        }
+        .myclass2{
+            background-color: #ffffff;
+        }
+    </style>
+    <script>
+        window.addEventListener("load",function(){
+            var x = document.getElementsByName("txt");
+            for(var i = 0 ; i< x.length ; i++){
+                document.getElementById(x[i].id).c
+                document.getElementById(x[i].id).addEventListener("blur",blurfunction);
+                document.getElementById(x[i].id).addEventListener("focusin",focusIn);
+            }
+
+            /*document.getElementById("t1").addEventListener("blur",blurfunction);
+            document.getElementById("t1").addEventListener("focusin",focusIn);
+            document.getElementById("t2").addEventListener("blur",blurfunction);
+            document.getElementById("t2").addEventListener("focusin",focusIn);
+            document.getElementById("t3").addEventListener("blur",blurfunction);
+            document.getElementById("t3").addEventListener("focusin",focusIn);
+            document.getElementById("t4").addEventListener("blur",blurfunction);
+            document.getElementById("t4").addEventListener("focusin",focusIn);*/
+            function blurfunction(){
+               console.log("This1 is "+this);
+                console.dir(this);
+                console.log("ElementById "+document.getElementById(this.id));
+               console.log(this.id);
+                document.getElementById(this.id).setAttribute("class","myclass2");
+
+
+
+            }
+            function focusIn(){
+            document.getElementById(this.id).setAttribute("class","myclass1");
+
+            }
+        });
+    </script>
+</head>
+<body>
+<input type="text" id="t1" name="txt">
+<input type="text" id="t2" name="txt">
+<input type="text" id="t3" name="txt">
+<input type="text" id="t4" name="txt">
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html> 
+ <head> 
+ <script type="text/javascript"> 
+      function whichButton(e) { 
+         //
+           if ((e.keyCode >= 48 && e.keyCode <= 57) ) {
+               alert(e.keyCode);
+               e.preventDefault();
+
+        } 
+      } 
+
+ </script> 
+ </head> 
+
+ <body> 
+ <input type="text" onkeyup="whichButton(event)"/>"
+  </body> 
+
+ </html>
