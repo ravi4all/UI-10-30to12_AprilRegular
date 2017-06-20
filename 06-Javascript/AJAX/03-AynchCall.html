@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            console.log("First....")
+            console.log("Second....")
+            console.log("Third....")
+            console.log("Fourth....")
+
+            $.get("demo.html",function(data){
+                /*document.getElementById("image").innerHTML = data;*/
+                /*for(var i=0;i<10000;i++){
+                    console.log("Processing");
+                }*/
+                $("#image").html(data);
+                console.log("Fifth");
+            });
+
+            console.log("Sixth")
+            console.log("Seventh")
+            console.log("Eight")
+        })
+    </script>
+</head>
+<body>
+
+<h1>Asynchronous demo</h1>
+
+<div id="image">
+    <img src='https://media.giphy.com/media/1Ujr5kKotT8SQ/giphy.gif'>
+</div>
+
+</body>
+</html>

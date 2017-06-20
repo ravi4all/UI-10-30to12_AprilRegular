@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function disp(){
+            console.log("Your Time Starts Now");
+            document.getElementById("loading").innerHTML = "<img src='https://media.giphy.com/media/1Ujr5kKotT8SQ/giphy.gif'>"
+            setTimeout(doWork,5000);
+        }
+        function doWork(){
+            for(var i=0; i<100000; i++){
+                console.log("Processing......")
+            }
+            document.getElementById("loading").innerHTML = "Processing Done";
+        }
+    </script>
+</head>
+<body>
+
+<h1>Asynch</h1>
+
+<input type="text"/>
+<button onclick="disp()">Click Me</button>
+
+<div id="loading">
+    <!--<img src="https://media.giphy.com/media/1Ujr5kKotT8SQ/giphy.gif" alt="image"/>-->
+</div>
+
+</body>
+</html>
