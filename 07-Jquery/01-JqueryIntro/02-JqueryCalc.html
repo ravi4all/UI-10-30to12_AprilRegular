@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /*$("#box_1,#box_2").val()*/
+            var a = $("#box_1");
+            var b = $("#box_2");
+            $("button").click(function(){
+                if(a.val() == "" || b.val() == ""){
+                    $("span").html("Please Enter a value");
+                }
+                else {
+                    var c = parseInt(a.val()) + parseInt(b.val());
+                    $("span").html(c);
+                }
+                var x = $(this).html();
+                console.log(x);
+            })
+        })
+    </script>
+</head>
+<body>
+
+<h1>Jquery Calculator</h1>
+
+<input type="text" id="box_1"/>
+<input type="text" id="box_2"/>
+
+<button>+</button>
+<button>-</button>
+<button>/</button>
+<button>*</button>
+
+<h2>Result is <span></span></h2>
+
+</body>
+</html>

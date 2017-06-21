@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            /*$("input[type='text']").on("blur", function(){
+                $("span").html("Please fill the box");
+            })*/
+            $("input[type='text']").on("change", function(){
+                /*$("span").html("Please fill the box");*/
+                /*$(this).addClass("blank");*/
+                $(this).css("border","1px solid red");
+            })
+        })
+    </script>
+    <style>
+        .blank {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Events</h1>
+
+<input type="text" id="box_1"/>
+<span></span>
+
+</body>
+</html>
