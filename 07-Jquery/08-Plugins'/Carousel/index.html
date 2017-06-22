@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="owl.carousel.min.css"/>
+    <style>
+        .owl-carousel:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+        .item {
+            /*float: left;
+            width: 33%;*/
+        }
+        .item img {
+            width: 100%;
+        }
+        .owl-prev {
+            position: absolute;
+            left: 20px;
+            top:40px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Owl Carousel</h1>
+
+<div class="owl-carousel owl-theme">
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div><div class="item">
+    <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+</div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div><div class="item">
+    <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+</div>
+    <div class="item">
+        <img src="../../../images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+
+
+</div>
+
+
+<script src="../../jquery-3.1.1.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    })
+</script>
+
+</body>
+</html>
