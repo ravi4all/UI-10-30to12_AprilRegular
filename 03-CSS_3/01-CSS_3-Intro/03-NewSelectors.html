@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        input:checked {
+            height: 30px;
+            width: 30px;
+        }
+        div img {
+            display: none;
+        }
+        input:checked ~ .image > img {
+            display: block;
+        }
+        img[alt="image_1"] {
+            display: none;
+        }
+        input[type="radio"]:checked + img[alt="image_1"]{
+            display: block;
+        }
+        #login {
+            position: absolute;
+            top: 30%;
+            border: 2px solid red;
+            padding: 30px;
+            display: none;
+        }
+        #login:target {
+            display: block;
+        }
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 5px;
+            text-decoration: none;
+        }
+        .close:after {
+            content: "x";
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>New Selectors</h1>
+
+<input type="checkbox"/> Show Image
+<input type="radio"/> Show Another Image
+<img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image_1"/>
+
+
+<div class="image">
+    <img src="../../images/00-22.gif" alt="image"/>
+</div>
+
+<a href="#login">Login</a>
+
+
+<div id="login">
+    <form action="#">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"/></td>
+            </tr>
+        </table>
+    </form>
+    <a href="#" class="close"></a>
+</div>
+
+</body>
+</html>
