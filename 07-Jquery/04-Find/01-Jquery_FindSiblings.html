@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Find Siblings</h1>
+
+<div class="a">
+    <img src="../../images/download%20(1).jpg" alt=""/>
+    <div class="b">
+        <img src="../../images/NEbZRNg3YX0cfc_1_b.jpg" alt=""/>
+        <div class="b">
+            <img src="../../images/l34882-ironman-rigged-original-model--98611.jpg"
+                 alt=""/><br/>
+            <img src="../../images/l34882-ironman-rigged-original-model--98611.jpg"
+                 alt=""/><br/>
+            <img src="../../images/l34882-ironman-rigged-original-model--98611.jpg"
+                 alt=""/><br/>
+            <button id="btn">Click to find</button>
+            <br/>
+            <a href="#">This is a link</a><br/>
+            <img src="../../images/l34882-ironman-rigged-original-model--98611.jpg"
+                 alt="" class="img_1"/><br/>
+            <img src="../../images/l34882-ironman-rigged-original-model--98611.jpg"
+                 alt=""/>
+        </div>
+    </div>
+</div>
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    $("#btn").click(function(){
+        /*$(this).closest(".b").hide();*/
+        /*$(this).parent().hide();*/
+        /*$(this).parents().hide()*/
+        /*$(this).parentsUntil(".a").hide();*/
+        $(this).siblings("a").hide();
+    })
+</script>
+
+</body>
+</html>

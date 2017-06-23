@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Ajax</h1>
+<button id="btn">Click Here</button>
+<div id="result">
+
+</div>
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    /*$("#result").load("data.html");*/
+    /*$.get("data.html",function(data){
+        $("#result").html(data);
+    })*/
+    $("#result").load("data");
+    $("#btn").click(function(){
+        $.getJSON("data",function(data){
+            $("#result").append("Id",data[0].Id);
+            $("#result").append("Name",data[0].name);
+            $("#result").append("Salary",data[0].salary);
+            $("#result").append("<img src='"+data[0].image+"'/>");
+        })
+    })
+</script>
+
+</body>
+</html>
