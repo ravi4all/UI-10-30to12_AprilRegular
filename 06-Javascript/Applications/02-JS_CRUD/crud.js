@@ -16,6 +16,20 @@ function saveTask(){
         var json = JSON.stringify(taskObj.taskList);
         localStorage.setItem('data',json);
         /*console.log(json);*/
+        Notification.requestPermission(function(){
+            var n = new Notification("ITEM CRUD-Application : By Ravikant Tyagi", {
+                body : "Hello User , Your Data is Saved in Your Browser",
+                icon : "../success.png"
+            });
+
+            document.getElementById("audio").play();
+            setTimeout(function(){
+                n.close();
+                document.getElementById("audio").pause();
+                //document.getElementById("audio").currentTime=0;
+            },7000);
+
+        });
     }
     else {
         console.log("Local storage not supported");
